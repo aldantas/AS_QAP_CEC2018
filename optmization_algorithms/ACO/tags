@@ -1,0 +1,474 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-exclude	Makefile	/^	--exclude=.svn --progress --relative --exclude=acotsp --exclude=acoqap	\\$/;"	m
+ACOTSP_ADAPTATION_H	adaptation.h	2;"	d
+ADAPT_PARAMETER_INIT	adaptation.c	30;"	d	file:
+ADAPT_PARAMETER_NEXT_REAL	adaptation.c	60;"	d	file:
+AM	utilities.c	309;"	d	file:
+ASSIGN_BOOLEAN_PARAMETER	parse.c	834;"	d	file:
+ASSIGN_DOUBLE_PARAMETER	parse.c	819;"	d	file:
+ASSIGN_ENUM_PARAMETER	parse.c	797;"	d	file:
+ASSIGN_INTEGER_PARAMETER	parse.c	827;"	d	file:
+CFLAGS	Makefile	/^CFLAGS=$(WARN_FLAGS) $(OPT_FLAGS) $(DEBUGFLAGS) $(TRACEFLAGS)$/;"	m
+CLAMP	adaptation.c	15;"	d	file:
+DEBUG	Makefile	/^DEBUG=0$/;"	m
+DEBUG	utilities.h	70;"	d
+DEBUG	utilities.h	72;"	d
+DEBUGFLAGS	Makefile	/^DEBUGFLAGS=$/;"	m
+DEBUGFLAGS	Makefile	/^DEBUGFLAGS=-g3 -DMALLOC_CHECK_=3 -DDODEBUG=$(DEBUG)$/;"	m
+DEFINE_BOOLEAN_PARAMETER	InOut.c	154;"	d	file:
+DEFINE_BOOLEAN_PARAMETER	ants.h	111;"	d
+DEFINE_BOOLEAN_PARAMETER	parse.c	81;"	d	file:
+DEFINE_BOOLEAN_PARAMETER	parse.c	841;"	d	file:
+DEFINE_DOUBLE_PARAMETER	InOut.c	156;"	d	file:
+DEFINE_DOUBLE_PARAMETER	ants.h	113;"	d
+DEFINE_DOUBLE_PARAMETER	parse.c	83;"	d	file:
+DEFINE_DOUBLE_PARAMETER	parse.c	842;"	d	file:
+DEFINE_INTEGER_PARAMETER	InOut.c	158;"	d	file:
+DEFINE_INTEGER_PARAMETER	ants.h	115;"	d
+DEFINE_INTEGER_PARAMETER	parse.c	843;"	d	file:
+DEFINE_INTEGER_PARAMETER	parse.c	85;"	d	file:
+DEFINE_OPTION	InOut.c	162;"	d	file:
+DEFINE_OPTION	ants.h	120;"	d
+DEFINE_OPTION	parse.c	89;"	d	file:
+DEFINE_OPTIONS	InOut.c	163;"	d	file:
+DEFINE_OPTIONS	ants.h	121;"	d
+DEFINE_OPTIONS	parse.c	90;"	d	file:
+DEFINE_OPTIONS_PARAMETER	InOut.c	160;"	d	file:
+DEFINE_OPTIONS_PARAMETER	ants.h	117;"	d
+DEFINE_OPTIONS_PARAMETER	parse.c	175;"	d	file:
+DEFINE_OPTIONS_PARAMETER	parse.c	194;"	d	file:
+DEFINE_OPTIONS_PARAMETER	parse.c	257;"	d	file:
+DEFINE_OPTIONS_PARAMETER	parse.c	71;"	d	file:
+DEFINE_OPTIONS_PARAMETER	parse.c	844;"	d	file:
+DEFINE_OPTIONS_PARAMETER	parse.c	87;"	d	file:
+DEFINE_PARAMETER	InOut.c	165;"	d	file:
+DEFINE_PARAMETER	ants.h	119;"	d
+DEFINE_PARAMETER	parse.c	176;"	d	file:
+DEFINE_PARAMETER	parse.c	195;"	d	file:
+DEFINE_PARAMETER	parse.c	258;"	d	file:
+DEFINE_PARAMETER	parse.c	72;"	d	file:
+DEFINE_PARAMETER	parse.c	845;"	d	file:
+DEFINE_PARAMETER	parse.c	92;"	d	file:
+DISTDIR	Makefile	/^dist : DISTDIR:=..\/$/;"	m
+DISTFILENAME	Makefile	/^dist : DISTFILENAME:=ACOTSPQAP-$(VERSION)$/;"	m
+DIST_SRC_FILES	Makefile	/^dist : DIST_SRC_FILES=*.c *.h README Makefile gpl.txt *.def tsp\/*.tsp qap\/*.dat$/;"	m
+DODEBUG	utilities.h	67;"	d
+FALSE	utilities.h	59;"	d
+HANDLE_LONG_BOOLEAN_OPTION	parse.c	238;"	d	file:
+HANDLE_LONG_OPTION	parse.c	218;"	d	file:
+HANDLE_SHORT_BOOLEAN_OPTION	parse.c	213;"	d	file:
+HANDLE_SHORT_OPTION	parse.c	200;"	d	file:
+HDR_PARSE	parse.h	4;"	d
+HEURISTIC	QAP.h	53;"	d
+HEURISTIC	TSP.h	54;"	d
+IA	utilities.c	307;"	d	file:
+IM	utilities.c	308;"	d	file:
+INFTY	utilities.h	55;"	d
+IQ	utilities.c	310;"	d	file:
+IR	utilities.c	311;"	d	file:
+LINE_BUF_LEN	InOut.h	56;"	d
+LS_MAX	ls.c	/^const unsigned int LS_MAX = LS_UNKNOWN - 1;$/;"	v
+LS_MAX	qap-ls.c	/^const unsigned int LS_MAX = LS_UNKNOWN - 1;$/;"	v
+LS_NONE	qap-ls.h	/^enum ls_types { LS_NONE = 0,$/;"	e	enum:ls_types
+LS_NONE	tsp-ls.h	/^enum ls_types { LS_NONE = 0,$/;"	e	enum:ls_types
+LS_THREE_OPT_FIRST	tsp-ls.h	/^                LS_THREE_OPT_FIRST,   \/* 3-opt local search *\/$/;"	e	enum:ls_types
+LS_TWO_H_OPT_FIRST	tsp-ls.h	/^                LS_TWO_H_OPT_FIRST,   \/* 2.5-opt local search *\/$/;"	e	enum:ls_types
+LS_TWO_OPT_FIRST	tsp-ls.h	/^                LS_TWO_OPT_FIRST,     \/* 2-opt local search *\/$/;"	e	enum:ls_types
+LS_UNKNOWN	qap-ls.h	/^                LS_UNKNOWN };$/;"	e	enum:ls_types
+LS_UNKNOWN	tsp-ls.h	/^                LS_UNKNOWN };$/;"	e	enum:ls_types
+LS_best_2_opt	qap-ls.h	/^                LS_best_2_opt,$/;"	e	enum:ls_types
+LS_first_2_opt	qap-ls.h	/^                LS_first_2_opt,$/;"	e	enum:ls_types
+LS_tabu_search_long	qap-ls.h	/^                LS_tabu_search_long,$/;"	e	enum:ls_types
+LS_tabu_search_short	qap-ls.h	/^                LS_tabu_search_short,$/;"	e	enum:ls_types
+MASK	utilities.c	312;"	d	file:
+MAX	utilities.h	63;"	d
+MAXIMUM_NO_TRIES	utilities.h	56;"	d
+MAX_ANTS	ants.h	58;"	d
+MAX_NEIGHBOURS	ants.h	59;"	d
+MIN	utilities.h	64;"	d
+M_PI	TSP.c	67;"	d	file:
+OPT_FLAGS	Makefile	/^OPT_FLAGS=-O2 -ffast-math$/;"	m
+PI	QAP.h	58;"	d
+PI	TSP.h	59;"	d
+PROG_ID_STR	acoqap.c	/^const char const * PROG_ID_STR = "ACO algorithms for the QAP";$/;"	v
+PROG_ID_STR	acotsp.c	/^const char const * PROG_ID_STR = "ACO algorithms for the TSP";$/;"	v
+REAL	timer.h	/^typedef enum type_timer {REAL, VIRTUAL} TIMER_TYPE;$/;"	e	enum:type_timer
+RNODE	Makefile	/^	@echo "ERROR: You must specify a remote node (e.g., RNODE=b21)"$/;"	m
+RNODE	Makefile	/^rsync : RNODE=iridiacluster$/;"	m
+RRR	QAP.h	56;"	d
+RRR	TSP.h	57;"	d
+STR_ERR_LONG_OPT_AMBIGUOUS	parse.c	102;"	d	file:
+STR_ERR_MISSING_ARG_LONG	parse.c	106;"	d	file:
+STR_ERR_MISSING_ARG_SHORT	parse.c	118;"	d	file:
+STR_ERR_UNEXPEC_ARG_LONG	parse.c	110;"	d	file:
+STR_ERR_UNKNOWN_LONG_OPT	parse.c	98;"	d	file:
+STR_ERR_UNKNOWN_SHORT_OPT	parse.c	114;"	d	file:
+STR_HELP	parse.c	/^static const char *const STR_HELP[] = {$/;"	v	file:
+STR_HELP_ACS	parse.c	155;"	d	file:
+STR_HELP_ANTS	parse.c	128;"	d	file:
+STR_HELP_AS	parse.c	140;"	d	file:
+STR_HELP_BWAS	parse.c	152;"	d	file:
+STR_HELP_DLB	parse.c	137;"	d	file:
+STR_HELP_EAS	parse.c	143;"	d	file:
+STR_HELP_ELITISTANTS	parse.c	131;"	d	file:
+STR_HELP_LOCALSEARCH	parse.c	134;"	d	file:
+STR_HELP_MMAS	parse.c	149;"	d	file:
+STR_HELP_NEW	parse.c	/^static const char *const STR_HELP_NEW[][3] = {$/;"	v	file:
+STR_HELP_OPTIMUM	parse.c	125;"	d	file:
+STR_HELP_RAS	parse.c	146;"	d	file:
+STR_HELP_TSPLIBFILE	parse.c	122;"	d	file:
+TIMER	Makefile	/^TIMER=dos$/;"	m
+TIMER_TYPE	timer.h	/^typedef enum type_timer {REAL, VIRTUAL} TIMER_TYPE;$/;"	t	typeref:enum:type_timer
+TRACE	Makefile	/^TRACE=0$/;"	m
+TRACE	utilities.h	76;"	d
+TRACEFLAGS	Makefile	/^TRACEFLAGS=-DTRACE=$(TRACE)$/;"	m
+TRUE	utilities.h	58;"	d
+VERSION	InOut.c	70;"	d	file:
+VERSION	Makefile	/^VERSION=0.99$/;"	m
+VIRTUAL	timer.h	/^typedef enum type_timer {REAL, VIRTUAL} TIMER_TYPE;$/;"	e	enum:type_timer
+WARN_FLAGS	Makefile	/^WARN_FLAGS=-Wall -Wextra -std=c99 -pedantic$/;"	m
+XOR	utilities.h	84;"	d
+_ACO_H_	aco.h	2;"	d
+_PROBLEM_H_	problem.h	2;"	d
+_QAP_LS_H	qap-ls.h	2;"	d
+_TSP_LS_H	tsp-ls.h	2;"	d
+acs_flag	ants.c	/^long int acs_flag;    \/* ant colony system *\/$/;"	v
+acs_global_update	aco.c	/^static void acs_global_update( void )$/;"	f	file:
+adapt_parameters_init	adaptation.c	/^adapt_parameters_init(void)$/;"	f
+adapt_parameters_next_iteration	adaptation.c	/^adapt_parameters_next_iteration(void)$/;"	f
+allocate_ants	ants.c	/^void allocate_ants ( void )$/;"	f
+alpha	ants.c	/^double alpha;         \/* importance of trail *\/$/;"	v
+ant	ants.c	/^ant_struct *ant;$/;"	v
+ant_empty_memory	ants.c	/^void ant_empty_memory( ant_struct *a )$/;"	f
+ant_struct	ants.h	/^} ant_struct;$/;"	t	typeref:struct:__anon1
+apply_local_search	aco.c	/^void apply_local_search( void )$/;"	f
+arg_ants	parse.c	/^const char *arg_ants;$/;"	m	struct:options	file:
+arg_dlb	parse.c	/^const char *arg_dlb;$/;"	m	struct:options	file:
+arg_elitistants	parse.c	/^const char *arg_elitistants;$/;"	m	struct:options	file:
+arg_localsearch	parse.c	/^const char *arg_localsearch;$/;"	m	struct:options	file:
+arg_optimum	parse.c	/^const char *arg_optimum;$/;"	m	struct:options	file:
+arg_tsplibfile	parse.c	/^const char *arg_tsplibfile;$/;"	m	struct:options	file:
+as_flag	ants.c	/^long int as_flag;     \/* ant system *\/$/;"	v
+as_update	aco.c	/^static void as_update( void )$/;"	f	file:
+aspirating_iteration	qap-ls.c	/^static long int  aspirating_iteration;$/;"	v	file:
+att_distance	TSP.c	/^long int att_distance (long int i, long int j) $/;"	f
+best_2_opt_asymmetric	qap-ls.c	/^void best_2_opt_asymmetric ( long int * q )$/;"	f
+best_2_opt_asymmetric_tabu	qap-ls.c	/^best_2_opt_asymmetric_tabu ( long int * q, int first_it_flag,$/;"	f	file:
+best_2_opt_symmetric	qap-ls.c	/^void best_2_opt_symmetric ( long int * q )$/;"	f
+best_2_opt_symmetric_tabu	qap-ls.c	/^best_2_opt_symmetric_tabu ( long int * q, int first_it_flag,$/;"	f	file:
+best_found_at	InOut.c	/^long int *best_found_at;$/;"	v
+best_in_try	InOut.c	/^long int *best_in_try;$/;"	v
+best_of_vector	utilities.c	/^long int best_of_vector( long int *values, long int l )$/;"	f
+best_so_far_ant	ants.c	/^ant_struct *best_so_far_ant;$/;"	v
+beta	ants.c	/^double beta;          \/* importance of heuristic evaluate *\/$/;"	v
+branching_factor	InOut.c	/^double   branching_factor;  \/* average node branching factor when searching *\/$/;"	v
+bwas_flag	ants.c	/^long int bwas_flag;   \/* best-worst ant system *\/$/;"	v
+bwas_pheromone_mutation	qap-ants.c	/^void bwas_pheromone_mutation( void )$/;"	f
+bwas_pheromone_mutation	tsp-ants.c	/^void bwas_pheromone_mutation( void )$/;"	f
+bwas_update	aco.c	/^static void bwas_update( void )$/;"	f	file:
+bwas_worst_ant_update	qap-ants.c	/^void bwas_worst_ant_update( ant_struct *worst, ant_struct *best)$/;"	f
+bwas_worst_ant_update	tsp-ants.c	/^void bwas_worst_ant_update( ant_struct *a1, ant_struct *a2)$/;"	f
+calloc_ant	ants.c	/^static void calloc_ant (ant_struct * a)$/;"	f	file:
+ceil_distance	TSP.c	/^long int ceil_distance (long int i, long int j) $/;"	f
+checkTour	InOut.c	/^void checkTour( long int *t )$/;"	f
+check_nn_list_pheromone_trail_limits	tsp-ants.c	/^void check_nn_list_pheromone_trail_limits( void )$/;"	f
+check_null_diagonal	utilities.c	/^long int check_null_diagonal ( long int **matrix, long int size )$/;"	f
+check_out_of_range	parse.c	/^check_out_of_range (double value, double minval, double maxval,$/;"	f	file:
+check_permutation	utilities.c	/^bool check_permutation(const long int *t, int size)$/;"	f
+check_pheromone_trail_limits	qap-ants.c	/^void check_pheromone_trail_limits(void )$/;"	f
+check_pheromone_trail_limits	tsp-ants.c	/^void check_pheromone_trail_limits( void )$/;"	f
+check_solution	QAP.c	/^int check_solution(const long int *t)$/;"	f
+check_solution	TSP.c	/^int check_solution(const long int *t)$/;"	f
+check_symmetry	utilities.c	/^long int check_symmetry ( long int **matrix, long int size )$/;"	f
+choose_and_move_to_next	qap-ants.c	/^void choose_and_move_to_next(  ant_struct *a, long int item \/* long int individual, long int item *\/)$/;"	f
+choose_and_move_to_next	tsp-ants.c	/^void choose_and_move_to_next( ant_struct *a , long int phase )$/;"	f
+choose_best_next	qap-ants.c	/^void choose_best_next( ant_struct *a, long int item )$/;"	f
+choose_best_next	tsp-ants.c	/^void choose_best_next( ant_struct *a, long int phase )$/;"	f
+choose_closest_next	tsp-ants.c	/^static void choose_closest_next( ant_struct *a, long int phase )$/;"	f	file:
+choose_tabu_length	qap-ls.c	/^static long int choose_tabu_length(void)$/;"	f	file:
+comp_report	InOut.c	/^FILE *report, *comp_report, *stat_report;$/;"	v
+compute_convergence_factor	acoqap.c	/^double compute_convergence_factor()$/;"	f
+compute_convergence_factor	acotsp.c	/^double compute_convergence_factor()$/;"	f
+compute_distances	TSP.c	/^long int ** compute_distances(void)$/;"	f
+compute_evaluation_function	QAP.c	/^long int compute_evaluation_function (long int *p)$/;"	f
+compute_nn_list_total_information	qap-ants.c	/^void compute_nn_list_total_information( void )$/;"	f
+compute_nn_list_total_information	tsp-ants.c	/^void compute_nn_list_total_information( void )$/;"	f
+compute_nn_lists	QAP.c	/^long int ** compute_nn_lists(struct problem *instance)$/;"	f
+compute_nn_lists	TSP.c	/^long int ** compute_nn_lists(struct problem *instance)$/;"	f
+compute_total_information	qap-ants.c	/^void compute_total_information( void )$/;"	f
+compute_total_information	tsp-ants.c	/^void compute_total_information( void )$/;"	f
+compute_tour_length	QAP.c	/^long int compute_tour_length(const long int *p )$/;"	f
+compute_tour_length	TSP.c	/^long int compute_tour_length(const long int *t ) $/;"	f
+construct_solutions	acoqap.c	/^void construct_solutions( void )$/;"	f
+construct_solutions	acotsp.c	/^void construct_solutions( void )$/;"	f
+copy_from_to	qap-ants.c	/^void copy_from_to(const ant_struct *a1, ant_struct *a2)$/;"	f
+copy_from_to	tsp-ants.c	/^void copy_from_to(const ant_struct *a1, ant_struct *a2) $/;"	f
+cum_n_ants	adaptation.c	/^static double cum_n_ants;$/;"	v	file:
+d_symmetric_flag	QAP.c	/^long int d_symmetric_flag    = FALSE;  \/* if first (d) matrix is symmetric: TRUE *\/$/;"	v
+d_symmetric_flag	qap-ls.c	/^long int d_symmetric_flag;$/;"	v
+distance	QAP.h	/^  long int      **distance;	        \/* distance matrix: distance[i][j] gives distance$/;"	m	struct:problem
+distance	TSP.c	/^long int  (*distance)(long int, long int);  \/* function pointer *\/$/;"	v
+distance	TSP.h	/^  long int      **distance;	        \/* distance matrix: distance[i][j] gives distance $/;"	m	struct:problem
+distance_between_ants	qap-ants.c	/^long int distance_between_ants( ant_struct *a1, ant_struct *a2)$/;"	f
+distance_between_ants	tsp-ants.c	/^long int distance_between_ants( ant_struct *a1, ant_struct *a2)$/;"	f
+dlb_flag	ls.c	/^long int dlb_flag = TRUE;  \/* flag indicating whether don't look bits are used. I recommend$/;"	v
+dlb_flag	qap-ls.c	/^long int dlb_flag; \/* set to one if don't look bits should be used *\/$/;"	v
+dtrunc	TSP.c	/^static double dtrunc (double x)$/;"	f	file:
+eas_flag	ants.c	/^long int eas_flag;    \/* elitist ant system *\/$/;"	v
+eas_update	aco.c	/^static void eas_update( void )$/;"	f	file:
+edge_weight_type	TSP.h	/^  char          edge_weight_type[LINE_BUF_LEN];  \/* selfexplanatory *\/$/;"	m	struct:problem
+elapsed	dos_timer.c	/^static double elapsed;$/;"	v	file:
+elapsed_time	dos_timer.c	/^double elapsed_time(TIMER_TYPE type)$/;"	f
+elapsed_time	unix_timer.c	/^double elapsed_time(TIMER_TYPE type)$/;"	f
+elitist_ants	ants.c	/^long int elitist_ants;    \/* additional parameter for elitist$/;"	v
+evaporation	qap-ants.c	/^void evaporation( void )$/;"	f
+evaporation	tsp-ants.c	/^void evaporation( void )$/;"	f
+evaporation_nn_list	qap-ants.c	/^void evaporation_nn_list( void )$/;"	f
+evaporation_nn_list	tsp-ants.c	/^void evaporation_nn_list( void )$/;"	f
+exit_program	InOut.c	/^void exit_program( void )$/;"	f
+exit_try	InOut.c	/^void exit_try( long int ntry )$/;"	f
+f_symmetric_flag	QAP.c	/^long int f_symmetric_flag    = FALSE;  \/* if second (f) matrix is symmetric: TRUE *\/$/;"	v
+f_symmetric_flag	qap-ls.c	/^long int f_symmetric_flag;$/;"	v
+find_best	ants.c	/^long int find_best( void )$/;"	f
+find_worst	ants.c	/^long int find_worst( void )$/;"	f
+first_2_opt_asymmetric	qap-ls.c	/^void first_2_opt_asymmetric ( long int * q )$/;"	f
+first_2_opt_symmetric	qap-ls.c	/^void first_2_opt_symmetric ( long int *q )$/;"	f
+flow	QAP.h	/^  long int      **flow;	                \/* flow matrix: flow[i][j] gives flow$/;"	m	struct:problem
+found_best	InOut.c	/^long int found_best;        \/* iteration in which best solution is found *\/$/;"	v
+found_branching	InOut.c	/^double   found_branching;   \/* branching factor when best solution is found *\/$/;"	v
+fprintTour	InOut.c	/^void fprintTour(FILE * stream, const long int *t )$/;"	f
+fprintf_parameters	InOut.c	/^fprintf_parameters (FILE *stream)$/;"	f	file:
+free_ant	ants.c	/^static void free_ant (ant_struct * a)$/;"	f	file:
+free_ants	ants.c	/^void free_ants (void)$/;"	f
+free_instance	QAP.c	/^void free_instance (struct problem *instance)$/;"	f
+free_instance	TSP.c	/^void free_instance (struct problem *instance)$/;"	f
+generate_double_matrix	utilities.c	/^double ** generate_double_matrix( long int n, long int m)$/;"	f
+generate_int_matrix	utilities.c	/^long int ** generate_int_matrix( long int n, long int m)$/;"	f
+generate_random_permutation	utilities.c	/^long int * generate_random_permutation( long int vector_size )$/;"	f
+geo_distance	TSP.c	/^long int geo_distance (long int i, long int j) $/;"	f
+get_instance_name	QAP.c	/^const char * get_instance_name(const struct problem *instance)$/;"	f
+get_instance_name	TSP.c	/^const char * get_instance_name(const struct problem *instance)$/;"	f
+global_acs_pheromone_update	qap-ants.c	/^void global_acs_pheromone_update( ant_struct *a )$/;"	f
+global_acs_pheromone_update	tsp-ants.c	/^void global_acs_pheromone_update( ant_struct *a )$/;"	f
+global_update_pheromone	ants.c	/^void global_update_pheromone( ant_struct *a )$/;"	f
+global_update_pheromone_weighted	ants.c	/^void global_update_pheromone_weighted( ant_struct *a, long int weight )$/;"	f
+init_move_values	qap-ls.c	/^static long int ** init_move_values( )$/;"	f	file:
+init_pheromone_trails	ants.c	/^void init_pheromone_trails( double initial_trail )$/;"	f
+init_program	InOut.c	/^void init_program( long int argc, char *argv[] )$/;"	f
+init_tabu	qap-ls.c	/^static long int ** init_tabu(void)$/;"	f	file:
+init_try	aco.c	/^static void init_try( long int ntry )$/;"	f	file:
+input_file	common.h	/^char *input_file = NULL;$/;"	v
+instance	QAP.c	/^struct problem instance;$/;"	v	typeref:struct:problem
+instance	TSP.c	/^struct problem instance;$/;"	v	typeref:struct:problem
+is_symmetric	qap-ls.c	20;"	d	file:
+iteration	InOut.c	/^long int iteration;         \/* iteration counter *\/$/;"	v
+lambda	InOut.c	/^const double   lambda = 0.05; \/* Parameter to determine branching factor *\/$/;"	v
+local_acs_pheromone_update	qap-ants.c	/^void local_acs_pheromone_update( ant_struct *a, long int j )$/;"	f
+local_acs_pheromone_update	tsp-ants.c	/^void local_acs_pheromone_update( ant_struct *a, long int phase )$/;"	f
+local_search	ls.c	/^void local_search(unsigned int ls_type, long int *tour)$/;"	f
+local_search	qap-ls.c	/^void local_search(unsigned int ls_type, long int *tour)$/;"	f
+ls_choice	common.h	/^char *ls_choice = "2";$/;"	v
+ls_flag	ls.c	/^unsigned int ls_flag;      \/* indicates whether and which local search is used *\/$/;"	v
+ls_flag	qap-ls.c	/^unsigned int ls_flag;$/;"	v
+ls_type_to_string	ls.c	/^const char * ls_type_to_string(unsigned int ls_type)$/;"	f
+ls_type_to_string	qap-ls.c	/^const char * ls_type_to_string(unsigned int ls_type)$/;"	f
+ls_types	qap-ls.h	/^enum ls_types { LS_NONE = 0,$/;"	g
+ls_types	tsp-ls.h	/^enum ls_types { LS_NONE = 0,$/;"	g
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+make_matrix_symmetric	QAP.c	/^static void make_matrix_symmetric( long int **matrix, long int size )$/;"	f	file:
+make_symmetric_flag	QAP.c	/^long int make_symmetric_flag = FALSE;  \/* convert asymmetric instance into symmetric$/;"	v
+make_symmetric_flag	qap-ls.c	/^long int make_symmetric_flag;$/;"	v
+make_tabu	qap-ls.c	/^make_tabu( long int * q, long int iteration, long int r, long int s )$/;"	f	file:
+matrix_long_print	utilities.c	/^void matrix_long_print (long int **matrix, int n, int m)$/;"	f
+max_n_ants	ants.c	/^long int max_n_ants;$/;"	v
+max_time	InOut.c	/^double   max_time;          \/* maximal allowed run time of a try  *\/$/;"	v
+max_tours	InOut.c	/^long int max_tours;         \/* maximum number of tour constructions in one try *\/$/;"	v
+max_tries	InOut.c	/^long int max_tries;         \/* maximum number of independent tries *\/$/;"	v
+mean	utilities.c	/^double mean( long int *values, long int max )$/;"	f
+mean_ants	InOut.c	/^double   mean_ants;         \/* average tour length *\/$/;"	v
+meanr	utilities.c	/^double meanr( double *values, long int max )$/;"	f
+mmas_evaporation_nn_list	qap-ants.c	/^void mmas_evaporation_nn_list( void )$/;"	f
+mmas_evaporation_nn_list	tsp-ants.c	/^void mmas_evaporation_nn_list( void )$/;"	f
+mmas_flag	ants.c	/^long int mmas_flag;   \/* MAX-MIN ant system *\/$/;"	v
+mmas_update	acoqap.c	/^void mmas_update( void )$/;"	f
+mmas_update	acotsp.c	/^void mmas_update( void )$/;"	f
+move_values	qap-ls.c	/^static long int   **move_values;       \/* move values in best improvement local search *\/$/;"	v	file:
+n	QAP.c	/^long int n;          \/* number of cities in the instance to be solved *\/$/;"	v
+n	QAP.h	/^  long int      n;                      \/* number of cities *\/$/;"	m	struct:problem
+n	TSP.c	/^long int n;          \/* number of cities in the instance to be solved *\/$/;"	v
+n	TSP.h	/^  long int      n;                      \/* number of cities *\/$/;"	m	struct:problem
+n_ants	ants.c	/^long int n_ants;      \/* number of ants *\/$/;"	v
+n_near	TSP.h	/^  long int      n_near;                 \/* number of nearest neighbors *\/$/;"	m	struct:problem
+n_tours	InOut.c	/^long int n_tours;$/;"	v
+n_try	InOut.c	/^long int n_try;$/;"	v
+name	QAP.h	/^  char          name[LINE_BUF_LEN];     \/* instance name *\/$/;"	m	struct:problem
+name	TSP.h	/^  char          name[LINE_BUF_LEN];      	 \/* instance name *\/$/;"	m	struct:problem
+name_buf	InOut.c	/^char name_buf[LINE_BUF_LEN];$/;"	v
+neighbour_choose_best_next	tsp-ants.c	/^void neighbour_choose_best_next( ant_struct *a, long int phase )$/;"	f
+nn_ants	ants.c	/^long int nn_ants;     \/* length of nearest neighbor lists for the ants'$/;"	v
+nn_list	QAP.h	/^  long int      **nn_list;              \/* nearest neighbor list; contains for each node i a$/;"	m	struct:problem
+nn_list	TSP.h	/^  long int      **nn_list;              \/* nearest neighbor list; contains for each node i a$/;"	m	struct:problem
+nn_list	aco.c	/^static long int **nn_list;$/;"	v	file:
+nn_ls	ls.c	/^long int nn_ls;            \/* maximal depth of nearest neighbour lists used in the$/;"	v
+nn_ls	qap-ls.c	/^long int nn_ls;  \/* Unused here *\/$/;"	v
+nn_tour	qap-ants.c	/^long int nn_tour(ant_struct * nn_ant)$/;"	f
+nn_tour	tsp-ants.c	/^long int nn_tour(ant_struct * nn_ant)$/;"	f
+node_branching	acoqap.c	/^double node_branching(double l)$/;"	f
+node_branching	acotsp.c	/^double node_branching(double l) $/;"	f
+nodeptr	TSP.h	/^  struct point  *nodeptr;               \/* array of structs containing coordinates of nodes *\/$/;"	m	struct:problem	typeref:struct:problem::point
+null_diagonal_flag	QAP.c	/^long int null_diagonal_flag  = FALSE;  \/* at least one matrix has zero diagonal: TRUE *\/$/;"	v
+null_diagonal_flag	qap-ls.c	/^long int null_diagonal_flag;$/;"	v
+num_different_edges	utilities.c	/^long int num_different_edges (const long int *p1, const long int *p2, int n)$/;"	f
+num_different_positions	utilities.c	/^long int num_different_positions (const long int *p1, const long int *p2, int n)$/;"	f
+opt_acs	parse.c	/^unsigned int opt_acs : 1;$/;"	m	struct:options	file:
+opt_ants	parse.c	/^unsigned int opt_ants : 1;$/;"	m	struct:options	file:
+opt_as	parse.c	/^unsigned int opt_as : 1;$/;"	m	struct:options	file:
+opt_bwas	parse.c	/^unsigned int opt_bwas : 1;$/;"	m	struct:options	file:
+opt_dlb	parse.c	/^unsigned int opt_dlb : 1;$/;"	m	struct:options	file:
+opt_eas	parse.c	/^unsigned int opt_eas : 1;$/;"	m	struct:options	file:
+opt_elitistants	parse.c	/^unsigned int opt_elitistants : 1;$/;"	m	struct:options	file:
+opt_localsearch	parse.c	/^unsigned int opt_localsearch : 1;$/;"	m	struct:options	file:
+opt_mmas	parse.c	/^unsigned int opt_mmas : 1;$/;"	m	struct:options	file:
+opt_n_ants	parse.c	/^long int opt_n_ants;$/;"	v
+opt_optimum	parse.c	/^unsigned int opt_optimum : 1;$/;"	m	struct:options	file:
+opt_ras	parse.c	/^unsigned int opt_ras : 1;$/;"	m	struct:options	file:
+opt_tsplibfile	parse.c	/^unsigned int opt_tsplibfile : 1;$/;"	m	struct:options	file:
+optimal	InOut.c	/^long int optimal;           \/* optimal solution or bound to find *\/$/;"	v
+optimum	TSP.h	/^  long int      optimum;                \/* optimal tour length if known, otherwise a bound *\/$/;"	m	struct:problem
+options	parse.c	/^struct options {$/;"	s	file:
+optstr__acs	parse.c	/^static const char *const optstr__acs = "acs";$/;"	v	file:
+optstr__ants	parse.c	/^static const char *const optstr__ants = "ants";$/;"	v	file:
+optstr__as	parse.c	/^static const char *const optstr__as = "as";$/;"	v	file:
+optstr__bwas	parse.c	/^static const char *const optstr__bwas = "bwas";$/;"	v	file:
+optstr__dlb	parse.c	/^static const char *const optstr__dlb = "dlb";$/;"	v	file:
+optstr__eas	parse.c	/^static const char *const optstr__eas = "eas";$/;"	v	file:
+optstr__elitistants	parse.c	/^static const char *const optstr__elitistants = "elitistants";$/;"	v	file:
+optstr__localsearch	parse.c	/^static const char *const optstr__localsearch = "localsearch";$/;"	v	file:
+optstr__mmas	parse.c	/^static const char *const optstr__mmas = "mmas";$/;"	v	file:
+optstr__optimum	parse.c	/^static const char *const optstr__optimum = "optimum";$/;"	v	file:
+optstr__ras	parse.c	/^static const char *const optstr__ras = "ras";$/;"	v	file:
+optstr__tsplibfile	parse.c	/^static const char *const optstr__tsplibfile = "tsplibfile";$/;"	v	file:
+output_file	common.h	/^char *output_file = NULL;$/;"	v
+output_solution	InOut.c	/^void output_solution( void )$/;"	f
+parse_commandline	parse.c	/^int parse_commandline (int argc, char *argv [])$/;"	f
+parse_options	parse.c	/^parse_options (struct options *const options, const char *const program_name,$/;"	f	file:
+pheromone	ants.c	/^double   **pheromone;$/;"	v
+pheromone_reinit	aco.c	/^static void pheromone_reinit (double trail_value)$/;"	f	file:
+pheromone_trail_update	aco.c	/^static void pheromone_trail_update( void )$/;"	f	file:
+place_ant	tsp-ants.c	/^void place_ant( ant_struct *a , long int step )$/;"	f
+point	TSP.h	/^struct point {$/;"	s
+population_statistics	InOut.c	/^void population_statistics ( void )$/;"	f
+powx	utilities.h	/^static inline double powx(double x, double y)$/;"	f
+printDist	QAP.c	/^void printDist(void)$/;"	f
+printDist	TSP.c	/^void printDist(void) $/;"	f
+printHeur	QAP.c	/^void printHeur(void)$/;"	f
+printHeur	TSP.c	/^void printHeur(void)$/;"	f
+printProbabilities	InOut.c	/^void printProbabilities(void)$/;"	f
+printTotal	InOut.c	/^void printTotal(void)$/;"	f
+printTour	InOut.c	/^void printTour(const long int *t )$/;"	f
+printTourFile	InOut.c	/^void printTourFile( long int *t )$/;"	f
+printTrail	InOut.c	/^void printTrail(void)$/;"	f
+print_default_parameters	InOut.c	/^void print_default_parameters()$/;"	f
+prob_of_selection	ants.c	/^double   *prob_of_selection;$/;"	v
+problem	QAP.h	/^struct problem {$/;"	s
+problem	TSP.h	/^struct problem {$/;"	s
+problem_set_default_ls_parameters	acoqap.c	/^void problem_set_default_ls_parameters(void)$/;"	f
+problem_set_default_ls_parameters	acotsp.c	/^void problem_set_default_ls_parameters(void)$/;"	f
+problem_set_default_parameters	acoqap.c	/^void problem_set_default_parameters(void)$/;"	f
+problem_set_default_parameters	acotsp.c	/^void problem_set_default_parameters(void)$/;"	f
+q0	ants.c	/^double q0;            \/* probability of best choice in tour construction *\/$/;"	v
+quantil	utilities.c	/^double quantil(long int v[], double q, long int l)$/;"	f
+ran01	utilities.c	/^double ran01( long *idum )$/;"	f
+random_number	utilities.c	/^long int random_number( long *idum )$/;"	f
+ras_flag	ants.c	/^long int ras_flag;    \/* rank-based version of ant system *\/$/;"	v
+ras_ranks	ants.c	/^long int ras_ranks;       \/* additional parameter for rank-based version$/;"	v
+ras_update	aco.c	/^static void ras_update( void )$/;"	f	file:
+readParameter	common.h	/^void readParameter(int argc, char **argv)$/;"	f
+read_best_known_value	QAP.c	/^read_best_known_value( FILE *input )$/;"	f
+read_etsp	TSP.c	/^struct point * read_etsp(const char *tsp_file_name) $/;"	f
+read_instance	QAP.c	/^void read_instance (const char* filename, struct problem *instance)$/;"	f
+read_instance	TSP.c	/^read_instance (const char* filename, struct problem *instance)$/;"	f
+read_matrix	QAP.c	/^long int ** read_matrix( FILE *input, long int size )$/;"	f
+read_problem_size	QAP.c	/^void read_problem_size( FILE *input )$/;"	f
+real_time	unix_timer.c	/^static double virtual_time, real_time;$/;"	v	file:
+report	InOut.c	/^FILE *report, *comp_report, *stat_report;$/;"	v
+res	unix_timer.c	/^static struct rusage res;$/;"	v	typeref:struct:rusage	file:
+restart_best_ant	ants.c	/^ant_struct *restart_best_ant;$/;"	v
+restart_condition	aco.c	/^static bool restart_condition(void)$/;"	f	file:
+restart_found_best	InOut.c	/^long int restart_found_best;\/* iteration in which restart-best solution is found *\/$/;"	v
+restart_freq	InOut.c	/^int     restart_freq;$/;"	v
+restart_iteration	InOut.c	/^long int restart_iteration; \/* remember iteration when restart was done if any *\/$/;"	v
+restart_time	InOut.c	/^double   restart_time;      \/* remember time when restart was done if any *\/$/;"	v
+rho	ants.c	/^double rho;           \/* parameter for evaporation *\/$/;"	v
+round_distance	TSP.c	/^long int round_distance (long int i, long int j) $/;"	f
+run_aco	aco.c	/^void run_aco(int argc, char *argv[], long *cost, double *best_time, double$/;"	f
+search_control_and_statistics	aco.c	/^static void search_control_and_statistics( void )$/;"	f	file:
+seed	InOut.c	/^long int seed;$/;"	v
+seed	common.h	/^char *seed = "0";$/;"	v
+select_move	qap-ls.c	/^static void select_move( long int *q, long int current, long int iteration, long int best_so_far,$/;"	f	file:
+set_default_acs_parameters	InOut.c	/^set_default_acs_parameters (void)$/;"	f
+set_default_as_parameters	InOut.c	/^set_default_as_parameters (void)$/;"	f
+set_default_bwas_parameters	InOut.c	/^set_default_bwas_parameters (void)$/;"	f
+set_default_eas_parameters	InOut.c	/^set_default_eas_parameters (void)$/;"	f
+set_default_ls_parameters	InOut.c	/^void set_default_ls_parameters(void)$/;"	f
+set_default_mmas_parameters	InOut.c	/^set_default_mmas_parameters (void)$/;"	f
+set_default_parameters	InOut.c	/^void set_default_parameters(void)$/;"	f
+set_default_ras_parameters	InOut.c	/^set_default_ras_parameters (void)$/;"	f
+sort	utilities.c	/^void sort(long int v[], long int left, long int right)$/;"	f
+sort2	utilities.c	/^void sort2(long int v[], long int v2[], long int left, long int right)$/;"	f
+start_time	dos_timer.c	/^static clock_t start_time;$/;"	v	file:
+start_timers	dos_timer.c	/^void start_timers(void)$/;"	f
+start_timers	unix_timer.c	/^void start_timers(void)$/;"	f
+stat_report	InOut.c	/^FILE *report, *comp_report, *stat_report;$/;"	v
+std_deviation	utilities.c	/^double std_deviation( long int *values, long int max, double mean )$/;"	f
+std_deviationr	utilities.c	/^double std_deviationr( double *values, long int max, double mean )$/;"	f
+stddev_ants	InOut.c	/^double   stddev_ants;       \/* stddev of tour lengths *\/$/;"	v
+strings_ls_types	ls.c	/^const char * const strings_ls_types  [] = {$/;"	v
+strings_ls_types	qap-ls.c	/^const char * const strings_ls_types [] = {$/;"	v
+swap	utilities.c	/^void swap(long int v[], long int i, long int j)$/;"	f
+swap2	utilities.c	/^void swap2(long int v[], long int v2[], long int i, long int j)$/;"	f
+tabu_list_length	qap-ls.c	/^static long int  tabu_list_length;$/;"	v	file:
+tabu_search	qap-ls.c	/^void tabu_search(long int *s, int tabu_search_length)$/;"	f
+tabu_values	qap-ls.c	/^static long int   **tabu_values;       \/* entries of matrix give iteration up to which an attribute is forbidden *\/$/;"	v	file:
+termination_condition	aco.c	/^static long int termination_condition( void )$/;"	f	file:
+three_opt_first	ls.c	/^void three_opt_first( long int *tour )$/;"	f
+time_best_found	InOut.c	/^double   *time_best_found;$/;"	v
+time_passed	InOut.c	/^double   time_passed;       \/* time passed until some moment*\/$/;"	v
+time_total_run	InOut.c	/^double   *time_total_run;$/;"	v
+time_used	InOut.c	/^double   time_used;         \/* time used until some given event *\/$/;"	v
+total	ants.c	/^double   **total;$/;"	v
+tour	ants.h	/^  long int  *tour;$/;"	m	struct:__anon1
+tour_length	ants.h	/^  long int  tour_length;$/;"	m	struct:__anon1
+tp	unix_timer.c	/^static struct timeval tp;$/;"	v	typeref:struct:timeval	file:
+trace_print	utilities.h	79;"	d
+trace_print	utilities.h	81;"	d
+trail_0	ants.c	/^double   trail_0;         \/* initial pheromone level in ACS and BWAS *\/$/;"	v
+trail_absolute_min	ants.h	56;"	d
+trail_max	ants.c	/^double   trail_max;       \/* maximum pheromone trail in MMAS *\/$/;"	v
+trail_min	ants.c	/^double   trail_min;       \/* minimum pheromone trail in MMAS *\/$/;"	v
+two_h_opt_first	ls.c	/^void two_h_opt_first( long int *tour )$/;"	f
+two_opt_first	ls.c	/^void two_opt_first( long int *tour )$/;"	f
+type_timer	timer.h	/^typedef enum type_timer {REAL, VIRTUAL} TIMER_TYPE;$/;"	g
+u_gb	ants.c	/^long int u_gb;            \/* every u_gb iterations update with best-so-far ant *\/$/;"	v
+update_pheromone	qap-ants.c	/^void update_pheromone (const long int *s, double d_tau)$/;"	f
+update_pheromone	tsp-ants.c	/^void update_pheromone (const long int *s, double d_tau)$/;"	f
+update_statistics	aco.c	/^static void update_statistics( void )$/;"	f	file:
+update_trail_max	aco.c	/^static double update_trail_max (void)$/;"	f	file:
+update_trail_min	qap-ants.c	/^double update_trail_min (double tau_max)$/;"	f
+update_trail_min	tsp-ants.c	/^double update_trail_min (double tau_max)$/;"	f
+vector_long_fprint	utilities.c	/^void vector_long_fprint (FILE * stream, const long int *v, size_t size)$/;"	f
+vector_long_print	utilities.c	/^void vector_long_print (const long int *v, size_t size)$/;"	f
+virtual_time	unix_timer.c	/^static double virtual_time, real_time;$/;"	v	file:
+visited	ants.h	/^  char      *visited;$/;"	m	struct:__anon1
+worst_of_vector	utilities.c	/^long int worst_of_vector( long int *values, long int l )$/;"	f
+write_params	InOut.c	/^void write_params( void )$/;"	f
+write_report	InOut.c	/^void write_report( void )$/;"	f
+write_results	common.h	/^int write_results(long cost, double best_time, double total_time)$/;"	f
+x	TSP.h	/^  double x;$/;"	m	struct:point
+xi	ants.c	/^double xi;           \/* parameter for ACS local pheromone update *\/$/;"	v
+y	TSP.h	/^  double y;$/;"	m	struct:point

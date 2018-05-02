@@ -1,0 +1,6 @@
+Step: 0 - Features: ['fd', 'dd', 'dsp', 'n_opt', 'ils_fdc', 'bi_fdc']
+Step: 1 - Features: ['n', 'fsp', 'fas', 'n_opt']
+Accuracy: 0.876543209877
+Precision, Recall, FScore, Total:
+(array([ 0.90322581,  0.84615385,  0.90909091]), array([ 0.84848485,  0.94285714,  0.76923077]), array([ 0.875     ,  0.89189189,  0.83333333]), array([33, 35, 13]))
+--------------------------------------------------

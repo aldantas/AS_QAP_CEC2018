@@ -1,0 +1,107 @@
+//                                                            -*- mode: c++ -*-
+/*** How to add a new parameter:
+
+   1.a) For a new parameter with various options:
+        Add a DEFINE_OPTIONS(enum_type, ) with the enum types and corresponding strings.
+        Add a new DEFINE_OPTIONS_PARAMETER that uses the enum_type as the last argument.
+
+   1.b) For other parameters: add a new DEFINE_PARAMETER
+
+   2) Add a HANDLE_LONG_OPTION to parse_options in parse.c
+
+**/
+
+/** FIXME:
+
+   - DEFINE_OPTIONS_PARAMETER could be instead, for consistency:
+     DEFINE_PARAMETER(..., DEFINE_OPTIONS_PARAMETER (types))
+
+   - Define all options using this mechanism.
+
+   - Adding option handling to parse_options
+**/
+
+#if !defined(DEFINE_PARAMETER)
+#error Not all necessary macros were defined.
+#endif
+
+#if !defined(DEFINE_OPTION)
+#define DEFINE_OPTIONS(...)
+#endif
+
+/* Min and max are ignored for these two. */
+DEFINE_PARAMETER(quiet_flag, "", "quiet", "reduce output to a minimum, no extra files", DEFINE_BOOLEAN_PARAMETER, 0, 1)
+DEFINE_PARAMETER(flag_help, "h", "help", "display this help text and exit", DEFINE_BOOLEAN_PARAMETER, 0, 1)
+
+DEFINE_PARAMETER(max_tries, "r", "tries", "# number of independent trials", DEFINE_INTEGER_PARAMETER, 1, MAXIMUM_NO_TRIES)
+DEFINE_PARAMETER(max_tours, "s", "tours", "# number of steps in each trial", DEFINE_INTEGER_PARAMETER, 0, LONG_MAX)
+DEFINE_PARAMETER(max_time, "t", "time", "# maximum time in seconds for each trial", DEFINE_DOUBLE_PARAMETER, 0.0, 86400.0)
+DEFINE_PARAMETER(seed, "", "seed", "# seed for the random number generator", DEFINE_INTEGER_PARAMETER, 0, LONG_MAX)
+DEFINE_PARAMETER(alpha, "a", "alpha", "# alpha (influence of pheromone trails)", DEFINE_DOUBLE_PARAMETER, 0., 100.)
+DEFINE_PARAMETER(opt_beta, "b", "beta", "# beta (influence of heuristic information)", DEFINE_DOUBLE_PARAMETER, 0., 100.)
+DEFINE_PARAMETER(opt_rho, "e", "rho", "# rho: pheromone trail evaporation", DEFINE_DOUBLE_PARAMETER, 0.000001, 1.)
+DEFINE_PARAMETER(opt_q0, "q", "q0", "# q_0: prob. of best choice in tour construction", DEFINE_DOUBLE_PARAMETER, 0., 1.)
+DEFINE_PARAMETER(nn_ants, "g", "nnants", "# nearest neighbours in tour construction", DEFINE_INTEGER_PARAMETER, 1, MAX_NEIGHBOURS)
+DEFINE_PARAMETER(nn_ls, "k", "nnls", "# nearest neighbors for local search", DEFINE_INTEGER_PARAMETER, 0, LONG_MAX)
+DEFINE_PARAMETER(ras_ranks, "f", "rasranks", "# number of ranks in rank-based Ant System", DEFINE_INTEGER_PARAMETER, 0, LONG_MAX)
+DEFINE_PARAMETER(p_dec, "", "pdec", "(0, 1] pdec parameter  for updating the pheromone limits", DEFINE_DOUBLE_PARAMETER, 0.0001, 1.)
+DEFINE_PARAMETER(flag_ph_limits, "", "ph-limits", "[0/1] disable/enable pheromone limits", DEFINE_INTEGER_PARAMETER, 0, 1)
+DEFINE_PARAMETER(schedule_length, "", "schedule-length", "length of update schedule in MMAS",DEFINE_INTEGER_PARAMETER, 1, INT_MAX)
+DEFINE_PARAMETER(xi, "", "xi", "strength of ACS local pheromone update", DEFINE_DOUBLE_PARAMETER, 0, 1)
+
+/* DEFINE_OPTIONS must go before DEFINE_OPTIONS_PARAMETER */
+DEFINE_OPTIONS (restart_types,
+                DEFINE_OPTION(RESTART_NEVER,"never"),
+                DEFINE_OPTION(RESTART_ALWAYS, "always"),
+                DEFINE_OPTION(RESTART_BRANCH_FACTOR, "branch-factor"),
+                DEFINE_OPTION(RESTART_AVG_DISTANCE, "distance"))
+DEFINE_OPTIONS_PARAMETER(flag_restart, "", "restart",
+                         "[never, always, branch-factor, distance] pheromone restart condition", restart_types)
+DEFINE_PARAMETER(restart_branch_factor, "", "restart-branch-factor",
+                 "restart if branching factor is less than this value", DEFINE_DOUBLE_PARAMETER, 0.0, 100.0)
+DEFINE_PARAMETER(restart_avg_distance, "", "restart-avg-distance",
+                 "restart if the distance between the best-so-far and the iteration-worst is less than this value",
+                 DEFINE_DOUBLE_PARAMETER, 0.0, (double) LONG_MAX)
+
+DEFINE_PARAMETER(min_iters_after_restart_best, "", "restart-min-iterations",
+                "minimum number of iterations since restart-best was found before attempting a restart",
+                 DEFINE_INTEGER_PARAMETER, 1, LONG_MAX)
+
+DEFINE_OPTIONS (var_types,
+                DEFINE_OPTION(VAR_NONE,"none"),
+                DEFINE_OPTION(VAR_DELTA, "delta"),
+                DEFINE_OPTION(VAR_SWITCH, "switch"))
+
+DEFINE_OPTIONS_PARAMETER(opt_var_n_ants, "", "var-ants", "[none, delta, switch] how to vary the number of ants at runtime", var_types)
+
+DEFINE_PARAMETER(delta_n_ants, "", "delta-ants", "number of ants to add at every iteration", DEFINE_DOUBLE_PARAMETER, 0, MAX_ANTS - 1)
+DEFINE_PARAMETER(switch_n_ants, "", "switch-ants", "change the number of ants to --end-ants at this iteration", DEFINE_INTEGER_PARAMETER, 1, LONG_MAX)
+DEFINE_PARAMETER(end_n_ants, "", "end-ants", "final number of ants when using --var-ants != none", DEFINE_INTEGER_PARAMETER, 1, MAX_ANTS - 1)
+
+DEFINE_OPTIONS_PARAMETER(opt_var_beta, "", "var-beta", "[none, delta, switch] how to vary beta at runtime", var_types)
+
+DEFINE_PARAMETER(delta_beta, "", "delta-beta", "change in beta at every iteration", DEFINE_DOUBLE_PARAMETER, 0.0, 100.0)
+DEFINE_PARAMETER(switch_beta, "", "switch-beta", "iteration at which the value of beta is set to --end-beta", DEFINE_INTEGER_PARAMETER, 1, LONG_MAX)
+DEFINE_PARAMETER(end_beta, "", "end-beta", "final value of beta", DEFINE_DOUBLE_PARAMETER, 0, 100.0)
+
+DEFINE_OPTIONS_PARAMETER(opt_var_rho, "", "var-rho", "[none, delta, switch] how to vary rho at runtime", var_types)
+DEFINE_PARAMETER(delta_rho, "", "delta-rho", "change in rho at every iteration", DEFINE_DOUBLE_PARAMETER, 0.0, 1.0)
+DEFINE_PARAMETER(switch_rho, "", "switch-rho", "iteration at which the value of rho is set to --end-rho", DEFINE_INTEGER_PARAMETER, 1, LONG_MAX)
+DEFINE_PARAMETER(end_rho, "", "end-rho", "final value of rho", DEFINE_DOUBLE_PARAMETER, 0.000001, 1.)
+
+DEFINE_OPTIONS_PARAMETER(opt_var_q0, "", "var-q0", "[none, delta, switch] how to vary q0 at runtime", var_types)
+DEFINE_PARAMETER(delta_q0, "", "delta-q0", "change in q0 at every iteration", DEFINE_DOUBLE_PARAMETER, 0.0, 1.0)
+DEFINE_PARAMETER(switch_q0, "", "switch-q0", "iteration at which the value of q0 is set to --end-q0", DEFINE_INTEGER_PARAMETER, 1, LONG_MAX)
+DEFINE_PARAMETER(end_q0, "", "end-q0", "final value of q0", DEFINE_DOUBLE_PARAMETER, 0.0, 1.0)
+
+
+
+#undef DEFINE_PARAMETER
+#undef DEFINE_OPTIONS_PARAMETER
+#undef DEFINE_BOOLEAN_PARAMETER
+#undef DEFINE_DOUBLE_PARAMETER
+#undef DEFINE_INTEGER_PARAMETER
+#undef DEFINE_OPTIONS
+#undef DEFINE_OPTION
+#undef PARAM_SHORT
+
