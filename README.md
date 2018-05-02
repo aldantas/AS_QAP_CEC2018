@@ -1,7 +1,7 @@
 # Experiment Materials
 This repository stores the experiments materials from the paper "A Meta-Learning
 Algorithm Selection Approach for the Quadratic Assignemnt Problem" to be
-pusblished at the Proceedings of [IEEE Congress on Evolutionary Computation
+published at the Proceedings of [IEEE Congress on Evolutionary Computation
 (IEEE CEC) 2018](http://www.ecomp.poli.br/~wcci2018/).
 
 The content of each folder is described next.
